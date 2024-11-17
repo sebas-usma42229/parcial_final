@@ -1,0 +1,165 @@
+/* ======================= */
+/*        GLOBAL STYLES    */
+/* ======================= */
+
+body {
+  background-image: url('./assets/images/background.jpg'); /* Cambia el nombre si tu archivo tiene otro nombre */
+  background-size: cover; /* Ajusta el tamaño para cubrir toda la pantalla */
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-position: center; /* Centra la imagen */
+  background-attachment: fixed; /* Mantén el fondo fijo al hacer scroll */
+  font-family: Arial, sans-serif; /* Mantén una tipografía legible */
+  color: white; /* Ajusta el color del texto si el fondo es oscuro */
+}
+
+.btn-primary {
+  border-radius: 5px;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* ======================= */
+/*     FILMS STYLES        */
+/* ======================= */
+
+.films-background {
+  background-image: url('./assets/images/background.jpg'); /* Ruta del fondo exclusivo */
+  background-size: cover; /* Ajusta para que el fondo cubra el contenedor sin deformarse */
+  background-repeat: no-repeat; /* Evita que el fondo se repita */
+  background-position: center center; /* Centra el fondo horizontal y verticalmente */
+  background-attachment: fixed; /* Fija el fondo al hacer scroll */
+  min-height: 100vh; /* Asegura que cubra al menos toda la pantalla */
+  padding: 20px 0; /* Espaciado interno para el contenido */
+}
+
+.card {
+  border-radius: 10px; /* Bordes redondeados */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  background-color: rgba(255, 255, 255, 0.10); /* Fondo blanco semitransparente */
+  backdrop-filter: blur(5px); /* Desenfoque del fondo detrás de la card */
+}
+
+.card:hover {
+  transform: scale(1.02); /* Efecto de zoom al pasar el mouse */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más fuerte al hacer hover */
+}
+
+.card-img-top {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de la card */
+  height: 450px; /* Altura fija para mantener uniformidad */
+  object-fit: cover; /* Ajustar la imagen sin distorsión */
+  border-radius: 10px 10px 0 0; /* Bordes redondeados solo arriba */
+  background-color: #f8f9fa; /* Fondo para imágenes que no llenan el espacio */
+}
+
+.card-footer {
+  background-color: rgba(255, 255, 255, 0.8); /* Fondo blanco semitransparente */
+  border-top: 1px solid rgba(0, 0, 0, 0.1); /* Línea superior sutil */
+  text-align: center; /* Centrar el texto o botón */
+}
+
+.card-title {
+  font-weight: bold;
+  color: #ffffff; /* Texto blanco */
+}
+
+.card-text {
+  color: #ffffff; /* Texto blanco */
+}
+
+/* ======================= */
+/*  FILMDETAILS STYLES     */
+/* ======================= */
+
+.film-details-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.9); /* Fondo semitransparente */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos principales */
+.film-title {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333; /* Título principal en negro */
+  margin-bottom: 20px;
+}
+
+/* Banner de la película */
+.film-banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Títulos de secciones */
+.film-info h2, 
+.film-description h2, 
+.film-additional h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #000; /* Títulos en negro */
+  margin-bottom: 10px;
+}
+
+/* Subtítulos adicionales */
+.film-additional h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000; /* Subtítulos en negro */
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+p, ul {
+  font-size: 1rem;
+  color: #666; /* Texto en gris oscuro */
+  line-height: 1.6;
+}
+
+/* Listas */
+ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* ======================= */
+/*  NAVBAR STYLES          */
+/* ======================= */
+
+.navbar-custom {
+  background: linear-gradient(90deg, #4facfe, #00f2fe); /* Degradado azul llamativo */
+  color: white;
+  padding: 15px 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+  position: sticky; /* Navbar fija en la parte superior */
+  top: 0;
+  z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.navbar-brand {
+  font-size: 1.5rem; /* Tamaño del texto */
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-left: auto; /* Centra el texto horizontalmente */
+  margin-right: auto;
+}
+
+.navbar-brand:hover {
+  color: #f8f9fa; /* Cambio de color al pasar el cursor */
+  text-decoration: none; /* Sin subrayado */
+}
